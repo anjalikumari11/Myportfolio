@@ -1,0 +1,106 @@
+{
+  "name": "Anjali Kumari",
+  "role": "Full Stack Developer",
+  "tagline": "Creating cute + powerful web experiences ",
+  "about": "Computer Science Engineering student with a strong interest in data visualization, infographic design, and AI workflows. Skilled in creating structured, user-friendly visual content and interactive UI designs. Passionate about combining design with data to build impactful visual storytelling.",
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React.js",
+    "Bootstrap",
+    "Data Visualization",
+    "Figma",
+    "Canva",
+    "Prompt Engineering",
+    "Data Annotation"
+  ],
+  "projects": [
+    {
+      "title": "How ChatGpt works - Infographics",
+      "description": "This infographic explains how ChatGPT processes user input using AI and machine learning. It shows how the model understands text, analyzes patterns from trained data, and generates human-like responses in real time through natural language processing (NLP).",
+      "tech": [
+        "Infographics"
+      ],
+      "image": "/architecture.png",
+      "link": "/architecture.png"
+    },
+    {
+      "title": "DineshMotors",
+      "description": "Battery selling & car service platform with exchange-based pricing, Google auth, and animated UI.",
+      "tech": [
+        "React.js",
+        "Node.js",
+        "Seo",
+        "Tailwind"
+      ],
+      "image": "/dineshmotors.png",
+      "link": "https://dineshmotors.in"
+    },
+    {
+      "title": "Data Visualization Dashboard",
+      "description": "Interactive dashboard representing structured data using bar charts, pie charts, and line graphs.",
+      "tech": [
+        "React.js",
+        "D3.js",
+        "Tailwind"
+      ],
+      "image": "/dashboard.png",
+      "link": "#"
+    },
+    {
+      "title": "AI Infographics Series",
+      "description": "Series of infographics explaining AI concepts like Neural Networks and ChatGPT workflows.",
+      "tech": [
+        "Canva",
+        "Design Theory",
+        "AI Concepts"
+      ],
+      "image": "/minimumAI.png",
+      "link": "#"
+    },
+    {
+      "title": "Mooncraft Events",
+      "description": "Moon Craft Events is a modern event management website designed to showcase services like wedding planning, decorations, and event coordination. It features an attractive UI, smooth navigation, and responsive design to help users explore services, view portfolios, and easily connect for bookings..",
+      "tech": [
+        "wordpress"
+      ],
+      "image": "/mooncraftevents.png",
+      "link": "https://mooncraftevents.com"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Telnet Media Company Pvt. Ltd.",
+      "role": "Full Stack Developer",
+      "duration": "Feb 2026 - April 2026",
+      "description": "Built responsive UI and integrated APIs for eCommerce and product management systems."
+    },
+    {
+      "company": "Croma Campus",
+      "role": "Full Stack Developer Intern",
+      "duration": "Jun 2025 - Aug 2025",
+      "description": "Hands-on training in Java, Spring Boot, and React. Built a full stack web application."
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech CSE",
+      "college": "IIMT College of Engineering",
+      "year": "2022-2026",
+      "grade": "CGPA: 8.3"
+    },
+    {
+      "degree": "XII (CBSE)",
+      "college": "Gyan International School",
+      "year": "2022",
+      "grade": "80.6%"
+    }
+  ],
+  "resume": "/resume.pdf",
+  "socials": {
+    "github": "https://github.com/anjalikumari11",
+    "linkedin": "https://www.linkedin.com/in/anjali-kumari-0571b4260/",
+    "email": "anjalikumari836685@gmail.com"
+  }
+}
