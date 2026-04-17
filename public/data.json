@@ -1,72 +1,60 @@
 {
   "name": "Anjali Kumari",
-  "role": "Full Stack Developer",
-  "tagline": "Creating cute + powerful web experiences ",
-  "about": "Computer Science Engineering student with a strong interest in data visualization, infographic design, and AI workflows. Skilled in creating structured, user-friendly visual content and interactive UI designs. Passionate about combining design with data to build impactful visual storytelling.",
+  "role": "Infographic & Data Visualization Designer",
+  "tagline": "Translating complex data into clear, compelling, and impactful visual stories.",
+  "about": "A creative strategist specializing in infographic design, data visualization, and visual communication. Currently pursuing B.Tech in CSE, I bridge the gap between complex data and human understanding through intuitive design and structured storytelling. I leverage AI workflows and modern design tools to create high-impact visual content for digital and print platforms.",
   "skills": [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React.js",
-    "Bootstrap",
+    "Information Architecture",
     "Data Visualization",
+    "Creative Strategy",
     "Figma",
+    "Adobe Illustrator",
     "Canva",
+    "UI/UX Design",
     "Prompt Engineering",
-    "Data Annotation"
+    "D3.js",
+    "Visual Storytelling"
   ],
   "projects": [
     {
-      "title": "How ChatGpt works - Infographics",
-      "description": "This infographic explains how ChatGPT processes user input using AI and machine learning. It shows how the model understands text, analyzes patterns from trained data, and generates human-like responses in real time through natural language processing (NLP).",
+      "title": "Business Growth Strategy",
+      "description": "A 5-step circular process infographic visualizing a company's scaling strategy, from market research to full-scale operations.",
       "tech": [
-        "Infographics"
+        "Vector Illustration",
+        "Business Design"
       ],
-      "image": "/architecture.png",
-      "link": "/architecture.png"
-    },
-    {
-      "title": "DineshMotors",
-      "description": "Battery selling & car service platform with exchange-based pricing, Google auth, and animated UI.",
-      "tech": [
-        "React.js",
-        "Node.js",
-        "Seo",
-        "Tailwind"
-      ],
-      "image": "/dineshmotors.png",
-      "link": "https://dineshmotors.in"
-    },
-    {
-      "title": "Data Visualization Dashboard",
-      "description": "Interactive dashboard representing structured data using bar charts, pie charts, and line graphs.",
-      "tech": [
-        "React.js",
-        "D3.js",
-        "Tailwind"
-      ],
-      "image": "/dashboard.png",
+      "image": "/business_circle.png",
       "link": "#"
     },
     {
-      "title": "AI Infographics Series",
-      "description": "Series of infographics explaining AI concepts like Neural Networks and ChatGPT workflows.",
+      "title": "Product Development Cycle",
+      "description": "A professional circular infographic showcasing the lifecycle of a product, focusing on the iterative design and testing phases.",
       "tech": [
-        "Canva",
-        "Design Theory",
-        "AI Concepts"
+        "Graphic Design",
+        "Process Mapping"
       ],
-      "image": "/minimumAI.png",
+      "image": "/product_cycle.png",
       "link": "#"
     },
     {
-      "title": "Mooncraft Events",
-      "description": "Moon Craft Events is a modern event management website designed to showcase services like wedding planning, decorations, and event coordination. It features an attractive UI, smooth navigation, and responsive design to help users explore services, view portfolios, and easily connect for bookings..",
+      "title": "Marketing Funnel Breakdown",
+      "description": "A segmented circular visualization of the modern marketing funnel, designed for clear presentation in corporate reports.",
       "tech": [
-        "wordpress"
+        "Figma",
+        "Canva"
       ],
-      "image": "/mooncraftevents.png",
-      "link": "https://mooncraftevents.com"
+      "image": "/marketing_funnel.png",
+      "link": "#"
+    },
+    {
+      "title": "Team Workflow Process",
+      "description": "A high-quality circular infographic illustrating the collaborative workflow between design and development teams.",
+      "tech": [
+        "Visual Communication",
+        "Canva"
+      ],
+      "image": "/workflow_circle.png",
+      "link": "#"
     }
   ],
   "experience": [
@@ -74,13 +62,13 @@
       "company": "Telnet Media Company Pvt. Ltd.",
       "role": "Full Stack Developer",
       "duration": "Feb 2026 - April 2026",
-      "description": "Built responsive UI and integrated APIs for eCommerce and product management systems."
+      "description": "Engineered responsive UI components and integrated RESTful APIs for eCommerce systems, focusing on data clarity and user-centric navigation."
     },
     {
       "company": "Croma Campus",
       "role": "Full Stack Developer Intern",
       "duration": "Jun 2025 - Aug 2025",
-      "description": "Hands-on training in Java, Spring Boot, and React. Built a full stack web application."
+      "description": "Participated in hands-on development using Java, Spring Boot, and React. Contributed to building structured data-driven web applications."
     }
   ],
   "education": [

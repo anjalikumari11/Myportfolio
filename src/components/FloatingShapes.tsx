@@ -1,15 +1,15 @@
 import { motion } from "motion/react";
-import { Heart, Star, Sparkles } from "lucide-react";
+import { MoveRight, Circle, Triangle, Square, Activity, Database, Share2 } from "lucide-react";
 
 export default function FloatingShapes() {
   const shapes = [
-    { Icon: Heart, color: "text-barbie-pink", size: 24, top: "10%", left: "5%" },
-    { Icon: Star, color: "text-barbie-purple", size: 20, top: "20%", left: "85%" },
-    { Icon: Sparkles, color: "text-barbie-peach", size: 18, top: "40%", left: "15%" },
-    { Icon: Heart, color: "text-barbie-light", size: 32, top: "60%", left: "80%" },
-    { Icon: Star, color: "text-barbie-pink", size: 28, top: "80%", left: "10%" },
-    { Icon: Sparkles, color: "text-barbie-purple", size: 22, top: "75%", left: "90%" },
-    { Icon: Heart, color: "text-barbie-peach", size: 26, top: "30%", left: "50%" },
+    { Icon: Circle, color: "text-primary", size: 24, top: "10%", left: "5%" },
+    { Icon: Share2, color: "text-accent", size: 20, top: "20%", left: "85%" },
+    { Icon: Activity, color: "text-secondary", size: 18, top: "40%", left: "15%" },
+    { Icon: Triangle, color: "text-primary", size: 32, top: "60%", left: "80%" },
+    { Icon: Square, color: "text-accent", size: 28, top: "80%", left: "10%" },
+    { Icon: Database, color: "text-secondary", size: 22, top: "75%", left: "90%" },
+    { Icon: MoveRight, color: "text-primary", size: 26, top: "30%", left: "50%" },
   ];
 
   return (
@@ -17,20 +17,20 @@ export default function FloatingShapes() {
       {shapes.map((shape, i) => (
         <motion.div
           key={i}
-          className={`absolute ${shape.color} opacity-30`}
+          className={`absolute ${shape.color} opacity-20`}
           style={{ top: shape.top, left: shape.left }}
           animate={{
-            y: [0, -30, 0],
-            rotate: [0, 15, -15, 0],
-            scale: [1, 1.1, 1],
+            y: [0, -20, 0],
+            rotate: [0, 90, 180, 270, 360],
+            scale: [1, 1.05, 1],
           }}
           transition={{
-            duration: 5 + i,
+            duration: 8 + i,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: "linear",
           }}
         >
-          <shape.Icon size={shape.size} />
+          <shape.Icon size={shape.size} strokeWidth={1.5} />
         </motion.div>
       ))}
     </div>

@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, ArrowRight } from "lucide-react";
 
 interface ProjectsProps {
   data: any;
@@ -7,66 +7,87 @@ interface ProjectsProps {
 
 export default function Projects({ data }: ProjectsProps) {
   return (
-    <section id="projects" className="py-24 px-4">
+    <section id="projects" className="py-24 px-4 bg-slate-100/50">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div className="max-w-2xl">
+            <motion.div 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="text-primary font-display font-bold text-sm uppercase tracking-[0.2em] mb-4"
+            >
+              Selected Works
+            </motion.div>
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-4xl md:text-6xl font-display font-extrabold text-slate-900 leading-tight"
+            >
+              Visual <span className="text-gradient">Storytelling</span> in Action
+            </motion.h2>
+          </div>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-5xl font-display font-extrabold text-gray-900 mb-4"
+            className="text-slate-600 max-w-md text-lg leading-relaxed md:pb-2"
           >
-            My <span className="text-barbie-pink">Creations</span> 
-          </motion.h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            A collection of projects where I blend technology with creativity to build something beautiful.
-          </p>
+            I transform complex datasets into intuitive visual experiences that communicate meaning at a glance.
+          </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto">
           {data.projects.map((project: any, index: number) => (
             <motion.div
               key={project.title}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.2 }}
-              whileHover={{ y: -10 }}
-              className="group relative glass-card rounded-[32px] overflow-hidden hover:shadow-2xl hover:shadow-barbie-pink/20 transition-all duration-500"
+              transition={{ delay: index * 0.1 }}
+              className="group"
             >
-              <div className="aspect-video overflow-hidden relative">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-barbie-pink/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                  <div className="flex gap-4">
-                    <a href={project.link} target="_blank" rel="noreferrer" className="p-3 bg-white rounded-full text-barbie-pink hover:scale-110 transition-transform">
-                      <ExternalLink size={20} />
-                    </a>
-                    <a href="#" className="p-3 bg-white rounded-full text-barbie-pink hover:scale-110 transition-transform">
-                      <Github size={20} />
+              <div className="relative aspect-[4/3] rounded-[2.5rem] overflow-hidden bg-white shadow-2xl shadow-slate-200/50 mb-8 p-3 border border-slate-200/50">
+                <div className="w-full h-full rounded-[2rem] overflow-hidden relative">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-[2px]">
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className="p-5 bg-white rounded-full text-primary shadow-2xl hover:scale-110 transition-transform duration-300"
+                    >
+                      <ExternalLink size={24} strokeWidth={2.5} />
                     </a>
                   </div>
                 </div>
               </div>
               
-              <div className="p-8">
-                <h3 className="text-2xl font-display font-bold text-gray-900 mb-3 group-hover:text-barbie-pink transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600 mb-6 line-clamp-2">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
+              <div className="px-4">
+                <div className="flex flex-wrap gap-3 mb-4">
                   {project.tech.map((t: string) => (
-                    <span key={t} className="px-3 py-1 rounded-full bg-barbie-light/20 text-barbie-deep text-xs font-bold uppercase tracking-wider">
+                    <span key={t} className="px-3 py-1 rounded-lg bg-slate-200/60 text-slate-600 text-[10px] font-bold uppercase tracking-widest border border-slate-300/30">
                       {t}
                     </span>
                   ))}
                 </div>
+                <h3 className="text-2xl md:text-3xl font-display font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors duration-300">
+                  {project.title}
+                </h3>
+                <p className="text-slate-600 mb-6 leading-relaxed line-clamp-2 text-lg">
+                  {project.description}
+                </p>
+                <motion.a 
+                  href={project.link}
+                  className="inline-flex items-center gap-2 font-display font-bold text-primary group/link"
+                >
+                  Explore Project <ArrowRight size={18} className="transition-transform group-hover/link:translate-x-1" />
+                </motion.a>
               </div>
             </motion.div>
           ))}
